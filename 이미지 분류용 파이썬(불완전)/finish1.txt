@@ -1,0 +1,7 @@
+import os, shutil
+ 
+for root, subdirs, files in os.walk("C:\\Users\\Kim Seung Jun\\Desktop\\Label"):
+    for f in files:
+        if '하품' in f:
+            file_to_move = os.path.join(root, f)
+            shutil.move(file_to_move, "C:\\Users\\Kim Seung Jun\\Desktop\\하품")
